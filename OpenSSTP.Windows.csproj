@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>OpenSSTP.Windows</AssemblyName>
+    <RootNamespace>OpenSSTP.Windows</RootNamespace>
+    <Platforms>x64;x86;ARM64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="runtimes\win-x64\native\wintun.dll" Link="runtimes\win-x64\native\wintun.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="runtimes\win-x86\native\wintun.dll" Link="runtimes\win-x86\native\wintun.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="runtimes\win-arm64\native\wintun.dll" Link="runtimes\win-arm64\native\wintun.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="native\wintun.h" />
+    <None Update="native\WINTUN-LICENSE.txt" />
+    <None Update="WINTUN-INTEGRATION-fa.md" />
+  </ItemGroup>
+</Project>
